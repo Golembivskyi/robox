@@ -29,6 +29,11 @@
   margin: 0 auto;
 }
 
+#team {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 #home {
   background: #121212 url(../img/home_bg.jpg) center center no-repeat;
   background-size: cover;
