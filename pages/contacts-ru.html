@@ -38,11 +38,11 @@
 		<h1 class="header">Связаться<br>с нами</h1>
 		<div class="contacts-windows">
 			<div class="contact-form-wrap">
-				<form class="contact-form" action="">
-					<input class="input" type="text" placeholder="Название компании">
-					<input class="input" type="text" placeholder="Ваше имя">
-					<input class="input" type="text" placeholder="Номер телефона">
-					<textarea class="textarea" rows="5" placeholder="Ваш вопрос"></textarea>
+				<form class="contact-form" action="/feedback.php" method="POST">
+					<input class="input" name="company" type="text" placeholder="Название компании">
+					<input class="input" name="name" type="text" placeholder="Ваше имя">
+					<input class="input" name="phone" type="text" placeholder="Номер телефона">
+					<textarea class="textarea" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
 					<button class="submit-btn" type="submit">Отправить</button>
 				</form>
 			</div>
