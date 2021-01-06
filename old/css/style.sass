@@ -1,0 +1,114 @@
+@import variables
+
+*
+	font-family: Roboto
+
+.sub-title
+	text-transform: uppercase
+	color: $blue
+	line-height: 1
+	font-weight: 700
+	font-family: Roboto Condensed
+	font-size: 16px
+.header
+	font-size: 4vw
+	line-height: 1.15
+	color: $dark
+	margin: 0
+	font-weight: 600
+.header-white
+	font-size: 4vw
+	line-height: 1.15
+	color: $white
+	margin: 0
+	font-weight: 600
+
+#home
+	height: 100vh
+	width: 100%
+	background-color: $blue
+	background-image: url(../img/b-5.jpg)
+	background-size: cover
+	background-position: center center
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+.text-regular-white
+	color: $white
+	margin-top: 30px
+	max-width: 740px
+	padding: 0 2vw
+	font-size: 18px
+	line-height: 1.8
+.text-regular-grey
+	color: $grey
+	font-size: 18px
+	line-height: 1.8
+#our-team
+	padding: 140px 0
+	box-sizing: border-box
+	display: flex
+	align-items: center
+	flex-direction: column
+.text-align-center
+	text-align: center
+.slideset
+	margin-top: 60px
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+	justify-content: space-around
+.person
+	width: 23%
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-bottom: 6vh
+	img
+		width: 100%
+.person:first-child
+	margin-left: 1%
+.person:last-child
+	margin-right: 1%
+.name
+	font-size: 24px
+	line-height: 32px
+	color: $dark
+	padding: 15px 15px 0
+	font-weight: 700
+	font-family: Roboto Condensed
+.position
+	font-size: 14px
+	color: $blue
+	text-transform: uppercase
+	padding-top: 10px
+
+.clm1, .clm2, .clm3
+	margin: 0 1vw
+
+#about-us
+	max-width: 1300px
+	margin: 0 auto
+.about-us-wrap
+	display: flex
+	margin: 120px 0
+.pic2, .pic1
+	// width: 100%
+	max-width: 295px
+
+@media screen and ( max-width: 768px )
+	.person
+		width: 400px
+	.header, .header-white
+		font-size: 6vw
+	.pic1, .pic2
+		display: none
+	.clm1
+		padding: 20px
+	
+@media screen and ( max-width: 425px )
+	.person
+		width: 300px
+	.header, .header-white
+		font-size: 7vw
