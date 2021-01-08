@@ -38,13 +38,29 @@
 		<h1 class="header">Contact<br>Information</h1>
 		<div class="contacts-windows">
 			<div class="contact-form-wrap">
-				<form class="contact-form" action="/feedback.php" method="POST">
+				<form id="contact-form" class="contact-form" action="/feedback.php" method="POST">
 					<input class="input" name="company" type="text" placeholder="Company">
 					<input class="input" name="name" type="text" placeholder="Your name">
 					<input class="input" name="phone" type="text" placeholder="Phone number">
 					<textarea class="textarea" name="message" rows="5" placeholder="Your Question"></textarea>
 					<button class="submit-btn" type="submit">Submit</button>
 				</form>
+				<script>
+					(() => {
+						let form = document.getElementById('contact-form');
+						form.addEventListener('submit', async e => {
+							e.preventDefault();
+							let res = await fetch(form.getAttribute('action'), {
+								method: 'POST',
+								body: new FormData(form)
+							});
+							if (res.ok) {
+								alert('Message has been sent.');
+								window.location.reload();
+							}
+						});
+					})();
+				</script>
 			</div>
 			<div class="contact-info-wrap">
 				<div class="contact-wrap-black"></div>
