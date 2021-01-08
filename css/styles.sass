@@ -83,13 +83,15 @@
 		background-color: transparent
 		border: none
 		border-bottom: 1px $white solid
-		transition: .3s
+		transition: .3s ease
 		outline: none
 		margin-bottom: 30px
 	.input::placeholder
 		color: $white
 		opacity: 1
 		transition: opacity .3s ease
+	.input:focus
+		border-bottom: 1px solid $accent
 	.input:focus::placeholder
 		opacity: 0
 		transition: opacity .3s ease
@@ -104,6 +106,7 @@
 		transition: .3s
 		outline: none
 		margin-bottom: 30px
+		color: $dark
 .textarea::placeholder
 	color: $dark
 	opacity: 1
@@ -118,3 +121,43 @@
 	color: $dark
 	border: none
 	margin: 0 auto
+	cursor: pointer
+	transition: .3s ease
+.submit-btn:hover
+	background-color: $accent
+
+.contacts-windows
+	display: flex
+	flex-direction: row
+	position: relative
+.contact-wrap-black
+	width: 550px
+	height: 378px
+	background-color: $dark
+	position: absolute
+	right: 35px
+	top: 55px
+.contact-wrap-white
+	width: 550px
+	height: 378px
+	background-color: $white
+	position: absolute
+	top: 90px
+	right: 70px
+	display: flex
+	justify-content: center
+	align-items: center
+.contacts-addres, .contacts-phone, .contacts-email
+	color: $black
+	font-weight: 500;
+	font-size: 34px;
+
+.link-black:link
+	color: $dark
+	text-decoration: none
+	transition: .3s ease
+.link-black:hover
+	color: $accent
+.link-black:visited
+	color: $dark
+	
