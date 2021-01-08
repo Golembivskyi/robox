@@ -8,5 +8,3 @@ $data = [
 ];
 
 mail('cbd@robox.technology', 'Robox: Feedback', implode("\n", $data));
-
-header('location', '/');

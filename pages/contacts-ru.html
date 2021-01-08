@@ -38,13 +38,29 @@
 		<h1 class="header">Связаться<br>с нами</h1>
 		<div class="contacts-windows">
 			<div class="contact-form-wrap">
-				<form class="contact-form" action="/feedback.php" method="POST">
+				<form id="contact-form" class="contact-form" action="/feedback.php" method="POST">
 					<input class="input" name="company" type="text" placeholder="Название компании">
 					<input class="input" name="name" type="text" placeholder="Ваше имя">
 					<input class="input" name="phone" type="text" placeholder="Номер телефона">
 					<textarea class="textarea" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
 					<button class="submit-btn" type="submit">Отправить</button>
 				</form>
+				<script>
+					(() => {
+						let form = document.getElementById('contact-form');
+						form.addEventListener('submit', async e => {
+							e.preventDefault();
+							let res = await fetch(form.getAttribute('action'), {
+								method: 'POST',
+								body: new FormData(form)
+							});
+							if (res.ok) {
+								alert('Ваше сообщение отправлено.');
+								window.location.reload();
+							}
+						});
+					})();
+				</script>
 			</div>
 			<div class="contact-info-wrap">
 
