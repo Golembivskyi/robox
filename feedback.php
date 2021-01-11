@@ -7,4 +7,6 @@ $data = [
     'Message' => isset($_POST['message']) ? $_POST['message'] : '(Not set)',
 ];
 
-mail('cbd@robox.technology', 'Robox: Feedback', implode("\n", $data));
+$headers = 'Content-Type: text/plain; charset=utf-8' . "\r\n";
+
+mail('cbd@robox.technology', 'Robox: Feedback', implode("\n", $data), $headers);
