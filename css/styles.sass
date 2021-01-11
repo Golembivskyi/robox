@@ -62,8 +62,6 @@
 .lang-switcher
 	font-size: 16px
 	margin-top: -2px
-.home-subtitle
-	width: 600px
 #advantages
 	height: 100vh
 .header
@@ -352,7 +350,6 @@
 					margin-bottom: 4px
 				.position
 					font-size: 16px
-
 .person-picture
 	filter: grayscale(100%)
 	transition: all .6s ease-out
@@ -361,21 +358,37 @@
 	filter: grayscale(0%)
 	transform: scale(1.1)
 	overflow: hidden
-
 .social-media
 	left: -80px
 	transition: all .3s ease-out
 .person-card:hover .social-media
 	left: 0px
-
 .name-card
 	opacity: .75
 	transition: all .6s ease-out
 .person-card:hover .name-card
 	opacity: 1
 
-
-
+.home-text-wrap
+	width: 100%
+	height: calc( 100% - 80px )
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	.home-title
+		font-family: "Exo 2 SemiBold";
+		// font-size: 96px;
+		font-size: 6em
+		line-height: 115px;
+		text-align: center;
+		letter-spacing: 0.01em;
+		margin-bottom: 24px
+	.home-subtitle
+		font-weight: 300;
+		font-size: 28px;
+		line-height: 34px;
+		text-align: center;
 
 
 
@@ -438,3 +451,4 @@
 	.header
 		font-size: 42px
 		padding: 40px 0
+
