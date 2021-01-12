@@ -378,18 +378,24 @@
 	align-items: center
 	.home-title
 		font-family: "Exo 2 SemiBold";
-		// font-size: 96px;
-		font-size: 6em
-		line-height: 115px;
+		max-width: 90%
+		font-size: 5.5vw
+		line-height: 6vw;
 		text-align: center;
 		letter-spacing: 0.01em;
-		margin-bottom: 24px
+		margin-bottom: 2.6vw
 	.home-subtitle
-		font-weight: 300;
-		font-size: 28px;
-		line-height: 34px;
+		font-family: "Exo 2 Light";
+		max-width: calc( 1120px - 60px )
+		width: 80%
+		padding: 0 30px
+		box-sizing: border-box
+		font-size: 1.5vw;
+		line-height: 1.8vw;
 		text-align: center;
-
+		margin-bottom: 4vw
+	.arrow-btm img
+		height: 100px
 
 
 @media screen and ( max-width:  1440px )
@@ -445,6 +451,17 @@
 	.contacts-text
 		width: 100%
 
+	.home-text-wrap
+		.home-title
+			font-size: 7vw
+			line-height: 7.5vw;
+			margin-bottom: 2.6vw
+		.home-subtitle
+			font-size: 2.5vw;
+			line-height: 2.8vw;
+			width: 90%
+
+
 @media screen and ( max-width:  375px )
 	.menu-line
 		display: none
@@ -452,3 +469,15 @@
 		font-size: 42px
 		padding: 40px 0
 
+	.home-text-wrap
+		.home-title
+			font-size: 8vw
+			line-height: 9.5vw;
+			margin-bottom: 6vw
+		.home-subtitle
+			font-size: 4vw;
+			line-height: 5vw;
+			width: 100%
+			margin-bottom: 8vw
+		.arrow-btm img
+			height: 80px
