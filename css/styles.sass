@@ -368,7 +368,6 @@
 	transition: all .6s ease-out
 .person-card:hover .name-card
 	opacity: 1
-
 .home-text-wrap
 	width: 100%
 	height: calc( 100% - 80px )
@@ -394,8 +393,69 @@
 		line-height: 1.8vw;
 		text-align: center;
 		margin-bottom: 4vw
-	.arrow-btm img
-		height: 100px
+	.mouse-arrow-link
+		width: 32px
+		cursor: default
+		.mouse-arrow
+			position: relative
+			height: 50px
+			.mouse-arrow-body
+				position: absolute
+				cursor: pointer
+			.mouse-arrow-wheel
+				position: absolute
+				top: 15px
+				left: 14px
+				animation-name: mouse-wheel
+				animation-duration: 1.5s
+				animation-timing-function: ease
+				animation-iteration-count: infinite
+			.mouse-arrow-arrow-1
+				position: absolute
+				top: 65px
+				left: 7px
+				animation-name: mouse-arrow-1
+				animation-duration: 1.5s
+				animation-timing-function: ease-out
+				animation-iteration-count: infinite
+			.mouse-arrow-arrow-2
+				position: absolute
+				top: 80px
+				left: 7px
+				animation-name: mouse-arrow-2
+				animation-delay: 0.25s
+				animation-duration: 1.5s
+				animation-timing-function: ease-out
+				animation-iteration-count: infinite
+			.mouse-arrow-arrow-3
+				position: absolute
+				top: 95px
+				left: 7px
+				animation-name: mouse-arrow-3
+				animation-delay: 0.50s
+				animation-duration: 1.5s
+				animation-timing-function: ease-out
+				animation-iteration-count: infinite
+@keyframes mouse-wheel
+	0% {top: 15px; opacity: 0}
+	20% {opacity: 1}
+	80% {opacity: 1}
+	100% {top: 29px; opacity: 0}
+@keyframes mouse-arrow-1
+	0% {opacity: 1}
+	33% {opacity: 1}
+	66% {opacity: 0}
+	100% {opacity: 0}
+@keyframes mouse-arrow-2
+	0% {opacity: 1}
+	25% {opacity: 1}
+	66% {opacity: 0}
+	100% {opacity: 0}
+@keyframes mouse-arrow-3
+	0% {opacity: 1}
+	33% {opacity: 1}
+	66% {opacity: 0}
+	100% {opacity: 0}
 
 
 @media screen and ( max-width:  1440px )
@@ -450,7 +510,6 @@
 			margin-bottom: 0
 	.contacts-text
 		width: 100%
-
 	.home-text-wrap
 		.home-title
 			font-size: 7vw
@@ -460,7 +519,23 @@
 			font-size: 2.5vw;
 			line-height: 2.8vw;
 			width: 90%
-
+	.home-text-wrap
+		.mouse-arrow-link
+			.mouse-arrow
+				.mouse-arrow-body
+					width: 26px
+				.mouse-arrow-wheel
+					top: 15px
+					left: 12px
+				.mouse-arrow-arrow-1
+					top: 65px
+					left: 4px
+				.mouse-arrow-arrow-2
+					top: 80px
+					left: 4px
+				.mouse-arrow-arrow-3
+					top: 95px
+					left: 4px
 
 @media screen and ( max-width:  375px )
 	.menu-line
@@ -468,7 +543,6 @@
 	.header
 		font-size: 42px
 		padding: 40px 0
-
 	.home-text-wrap
 		.home-title
 			font-size: 8vw
@@ -479,5 +553,30 @@
 			line-height: 5vw;
 			width: 100%
 			margin-bottom: 8vw
-		.arrow-btm img
-			height: 80px
+	.home-text-wrap
+		.mouse-arrow-link
+			margin-top: 20px
+			.mouse-arrow
+				.mouse-arrow-body
+					width: 22px
+				.mouse-arrow-wheel
+					animation-name: mouse-wheel-mobile
+					top: 15px
+					left: 10px
+				.mouse-arrow-arrow-1
+					top: 50px
+					left: 5px
+					width: 12px
+				.mouse-arrow-arrow-2
+					top: 62px
+					left: 5px
+					width: 12px
+				.mouse-arrow-arrow-3
+					top: 74px
+					left: 5px
+					width: 12px
+@keyframes mouse-wheel-mobile
+	0% {top: 10px; opacity: 0}
+	20% {opacity: 1}
+	80% {opacity: 1}
+	100% {top: 20px; opacity: 0}
