@@ -1,3 +1,5 @@
+
+// Burger Menu
 let burger = document.getElementById('burger'),
 	 nav    = document.getElementById('main-nav');
 
@@ -7,16 +9,6 @@ burger.addEventListener('click', function(e){
 });
 
 
-/* Onload demo - dirty timeout */
-let clickEvent = new Event('click');
-
-window.addEventListener('load', function(e) {
-	burger.dispatchEvent(clickEvent);
-	
-	setTimeout(function(){
-		burger.dispatchEvent(clickEvent);
-	}, 5500);
-});
 
 
 // Smooth scroll.
@@ -30,8 +22,8 @@ window.addEventListener('load', function(e) {
 			a = a.parentNode;
 		}
 
-		let d = document.documentElement;
-		if (a.getAttribute('href')[0] === '#') {
+		if (a !== null && a.getAttribute('href')[0] === '#') {
+			let d = document.documentElement;
 			let t = document.querySelector(a.getAttribute('href'));
 			let rect = t.getBoundingClientRect();
 			let dist = rect.top;
