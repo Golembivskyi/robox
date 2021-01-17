@@ -124,10 +124,6 @@
   margin-top: -2px;
 }
 
-#about-company {
-  height: 100vh;
-}
-
 .header {
   font-weight: 500;
   font-size: 64px;
@@ -242,8 +238,11 @@
   top: 90px;
   right: 70px;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.contacts-text {
+  margin-left: 60px;
 }
 
 .contacts-addres, .contacts-phone, .contacts-email {
@@ -642,68 +641,6 @@
   animation-iteration-count: infinite;
 }
 
-@keyframes mouse-wheel {
-  0% {
-    top: 15px;
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    top: 29px;
-    opacity: 0;
-  }
-}
-
-@keyframes mouse-arrow-1 {
-  0% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes mouse-arrow-2 {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes mouse-arrow-3 {
-  0% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .services-row {
   display: flex;
   justify-content: center;
@@ -892,6 +829,53 @@
   position: absolute;
 }
 
+#advantages {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 150px 0;
+  box-sizing: border-box;
+}
+
+.section-header {
+  font-family: "Exo 2 Medium";
+  font-size: 64px;
+  line-height: 77px;
+  color: #121212;
+  padding-bottom: 100px;
+}
+
+.advantages-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages-row .advantage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 430px;
+}
+
+.advantages-row .advantage-card .advantage-card-head {
+  color: #121212;
+  font-family: "Exo 2 Medium";
+  font-size: 32px;
+  line-height: 38px;
+  max-width: 430px;
+  text-align: center;
+  margin: 50px 0 20px;
+}
+
+.advantages-row .advantage-card .advantage-card-body {
+  color: #121212;
+  font-family: "Exo 2";
+  font-size: 22px;
+  line-height: 26px;
+  max-width: 330px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1440px) {
   .header {
     padding-left: 20px;
@@ -944,6 +928,21 @@
   .services-row .cell3-right {
     display: none;
   }
+  .section-header {
+    padding: 0 0 100px 30px;
+  }
+  .advantages-row {
+    justify-content: space-around;
+  }
+  .advantages-row .advantage-card {
+    padding: 0 30px 100px;
+  }
+  .advantages-row .advantage-card .advantage-card-head {
+    margin: 50px 0 20px;
+  }
+  .advantages-row .advantage-card:last-child {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -995,6 +994,8 @@
   .contacts-text {
     background-color: #000000;
     text-align: center;
+    width: 100%;
+    margin-left: 0;
   }
   .contacts-text .contacts-addres, .contacts-text .contacts-phone a {
     color: #ffffff;
@@ -1002,9 +1003,6 @@
     padding: 10px 20px;
     box-sizing: border-box;
     margin-bottom: 0;
-  }
-  .contacts-text {
-    width: 100%;
   }
   .home-text-wrap .home-title {
     font-size: 7vw;
@@ -1046,6 +1044,30 @@
   }
   .services-row .cell1-right .a-service-header::after {
     left: calc( 50% - 32px);
+  }
+  .section-header {
+    font-size: 52px;
+    line-height: 52px;
+    padding: 0 20px 80px;
+    text-align: center;
+  }
+  .advantages-row .advantage-card {
+    padding: 0 20px 80px;
+  }
+  .advantages-row .advantage-card img {
+    width: 100px;
+  }
+  .advantages-row .advantage-card .advantage-card-head {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 30px 0 10px;
+  }
+  .advantages-row .advantage-card .advantage-card-body {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #advantages {
+    padding: 100px 0;
   }
 }
 
@@ -1093,6 +1115,73 @@
     top: 74px;
     left: 5px;
     width: 12px;
+  }
+  .section-header {
+    font-size: 46px;
+    line-height: 46px;
+    padding: 0 15px 70px;
+  }
+}
+
+@keyframes mouse-wheel {
+  0% {
+    top: 15px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 29px;
+    opacity: 0;
+  }
+}
+
+@keyframes mouse-arrow-1 {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes mouse-arrow-2 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes mouse-arrow-3 {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
