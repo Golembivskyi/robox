@@ -854,7 +854,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 430px;
+  width: 430px;
 }
 
 .advantages-row .advantage-card .advantage-card-head {
@@ -874,6 +874,67 @@
   line-height: 26px;
   max-width: 330px;
   text-align: center;
+}
+
+#about-company-home {
+  overflow: hidden;
+}
+
+.about-company-home {
+  background-color: #000000;
+  width: 100%;
+  min-height: 680px;
+  margin: 76px 0;
+}
+
+.about-company-slide {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-company-slide .about-company-slide-content {
+  padding-top: 70px;
+  max-width: 855px;
+}
+
+.about-company-slide .about-company-slide-content .about-company-slide-header {
+  font-family: "Exo 2 Medium";
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.about-company-slide .about-company-slide-content .about-company-slide-body p {
+  font-family: Exo 2;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.about-company-slide-ilustrations {
+  position: absolute;
+  top: -76px;
+  right: -300px;
+  width: 811px;
+  height: 835px;
+}
+
+.about-company-slide-ilustrations .about-illustration-2 {
+  position: absolute;
+  right: -0px;
+  bottom: 0px;
+}
+
+.about-company-slide-ilustrations .about-us-illustration-square-1 {
+  position: absolute;
+  top: 212px;
+  left: 420px;
+}
+
+.about-company-slide-ilustrations .about-us-illustration-square-2 {
+  position: absolute;
+  top: 523px;
+  left: 280px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -942,6 +1003,19 @@
   }
   .advantages-row .advantage-card:last-child {
     padding-bottom: 0;
+  }
+  .about-company-slide-ilustrations {
+    display: none;
+  }
+  .about-company-slide .about-company-slide-content {
+    margin: 0 auto;
+    padding: 70px 30px 0;
+  }
+  .about-company-slide .about-company-slide-content .about-company-slide-header {
+    text-align: center;
+  }
+  .about-company-slide .about-company-slide-content .about-company-slide-body p {
+    text-align: center;
   }
 }
 
@@ -1069,6 +1143,21 @@
   #advantages {
     padding: 100px 0;
   }
+  .about-company-home {
+    min-height: 0;
+  }
+  .about-company-slide .about-company-slide-content {
+    margin: 0 auto;
+    padding: 70px 20px;
+  }
+  .about-company-slide .about-company-slide-content .about-company-slide-header {
+    font-size: 46px;
+    line-height: 56px;
+  }
+  .about-company-slide .about-company-slide-content .about-company-slide-body p {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1120,6 +1209,9 @@
     font-size: 46px;
     line-height: 46px;
     padding: 0 15px 70px;
+  }
+  .about-company-slide .about-company-slide-content .about-company-slide-body p {
+    font-size: 18px;
   }
 }
 
