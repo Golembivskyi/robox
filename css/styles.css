@@ -881,7 +881,7 @@
 }
 
 .about-company-home {
-  background-color: #000000;
+  background: url(../svg/r.svg) no-repeat center #121212;
   width: 100%;
   min-height: 680px;
   margin: 76px 0;
@@ -935,6 +935,31 @@
   position: absolute;
   top: 523px;
   left: 280px;
+}
+
+#map-main {
+  overflow: hidden;
+}
+
+.map-wrap {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map-wrap .world-map {
+  margin-left: -12%;
+  width: 122%;
+  height: auto;
+}
+
+#map-main #UA, #map-main #PL, #map-main #US, #map-main #UK, #map-main #RO, #map-main #PL, #map-main #DE, #map-main #DK, #map-main #AU, #map-main #CN, #map-main #IL {
+  fill: #848E9F;
+  transition: .3s ease-in;
+}
+
+#map-main #UA:hover, #map-main #PL:hover, #map-main #US:hover, #map-main #UK:hover, #map-main #RO:hover, #map-main #PL:hover, #map-main #DE:hover, #map-main #DK:hover, #map-main #AU:hover, #map-main #CN:hover, #map-main #IL:hover {
+  fill: #dd0000;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1157,6 +1182,9 @@
   .about-company-slide .about-company-slide-content .about-company-slide-body p {
     font-size: 22px;
     line-height: 26px;
+  }
+  #map-main {
+    display: none;
   }
 }
 

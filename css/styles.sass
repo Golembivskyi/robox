@@ -569,7 +569,6 @@
 	top: 0
 	left: 656px
 	position: absolute
-
 #advantages
 	max-width: 1440px
 	margin: 0 auto
@@ -605,11 +604,10 @@
 			line-height: 26px
 			max-width: 330px
 			text-align: center
-
 #about-company-home
 	overflow: hidden
 .about-company-home
-	background-color: $black
+	background: url(../svg/r.svg) no-repeat center $dark
 	width: 100%
 	min-height: 680px
 	margin: 76px 0
@@ -630,7 +628,6 @@
 				font-family: Exo 2
 				font-size: 28px
 				line-height: 42px
-
 .about-company-slide-ilustrations
 	position: absolute
 	top: -76px
@@ -649,7 +646,24 @@
 		position: absolute
 		top: 523px
 		left: 280px
-
+#map-main
+	overflow: hidden
+.map-wrap
+	max-width: 1440px
+	width: 100%
+	margin: 0 auto
+	.world-map
+		margin-left: -12%
+		width: 122%
+		height: auto
+#map-main
+	// accent colour by dafalt
+	#UA, #PL, #US, #UK, #RO, #PL, #DE, #DK, #AU, #CN, #IL
+		fill: $map-accent
+		transition: .3s ease-in
+	// changes on hoover
+	#UA:hover, #PL:hover, #US:hover, #UK:hover, #RO:hover, #PL:hover, #DE:hover, #DK:hover, #AU:hover, #CN:hover, #IL:hover
+		fill: $accent
 
 @media screen and ( max-width:  1440px )
 	.header
@@ -704,7 +718,6 @@
 			padding-bottom: 0
 	.about-company-slide-ilustrations
 		display: none
-
 	.about-company-slide
 		.about-company-slide-content
 			margin: 0 auto
@@ -833,7 +846,8 @@
 				p
 					font-size: 22px
 					line-height: 26px
-
+	#map-main
+		display: none
 
 @media screen and ( max-width:  375px )
 	.menu-line
@@ -877,7 +891,6 @@
 		font-size: 46px
 		line-height: 46px
 		padding: 0 15px 70px
-		
 	.about-company-slide
 		.about-company-slide-content
 			.about-company-slide-body
