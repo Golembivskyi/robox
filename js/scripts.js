@@ -10,6 +10,14 @@ burger.addEventListener('click', function(e){
 
 
 
+document.body.onscroll = () => {
+	if (document.documentElement.scrollTop > 25) {
+		document.body.classList.add('scrolled');
+	} else {
+		document.body.classList.remove('scrolled');
+	}
+};
+
 
 // Smooth scroll.
 (() => {
