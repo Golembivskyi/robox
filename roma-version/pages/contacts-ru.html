@@ -23,19 +23,19 @@
 
 	<nav class="menu-regular-page">
 		<div class="menu-line">
-			<a class="menu-link" href="../index.html"><img class="logo-black-big" src="/svg/logo-white.svg"
+			<a class="menu-link" href="../index-ru.html"><img class="logo-black-big" src="/svg/logo-white.svg"
 					alt="Robox Technology logo"></a>
 			<ul class="main-menu">
-				<li><a class="menu-link" href="../index.html">Home</a></li>
-				<li><a class="menu-link" href="about-us.html">About</a></li>
-				<li><a class="menu-link" href="services.html">Services</a></li>
-				<li><a class="menu-link" href="contacts.html">Contacts</a></li>
+				<li><a class="menu-link" href="../index-ru.html">Компания</a></li>
+				<li><a class="menu-link" href="services-ru.html">Услуги</a></li>
+				<li><a class="menu-link" href="team-ru.html">Команда</a></li>
+				<li><a class="menu-link" href="contacts-ru.html">Контакты</a></li>
 			</ul>
-			<div class="lang-switcher"><a class="menu-link" href="contacts-ru.html">RU</a></div>
+			<div class="lang-switcher"><a class="menu-link" href="contacts.html">EN</a></div>
 		</div>
 		<div class="menu-line-mobile">
-			<div class="lang-switcher"><a class="menu-link" href="contacts-ru.html">RU</a></div>
-			<div class="burger-btn"><a class="menu-link" href="../index.html"><img src="../svg/favicon-white.svg"
+			<div class="lang-switcher"><a class="menu-link" href="contacts.html">EN</a></div>
+			<div class="burger-btn"><a class="menu-link" href="../index-ru.html"><img src="../svg/favicon-white.svg"
 						alt="Robox Technology Logo"></a></div>
 			<div class="logo-space">
 				<button id="burger" class="open-main-nav">
@@ -44,16 +44,16 @@
 				<nav class="main-nav" id="main-nav">
 					<ul>
 						<li>
-							<a href="../index.html">Home</a>
+							<a href="../index-ru.html">О компании</a>
 						</li>
 						<li>
-							<a href="about-us.html">About Us</a>
+							<a href="services-ru.html">Услуги</a>
 						</li>
 						<li>
-							<a href="services.html">Services</a>
+							<a href="team-ru.html">Команда</a>
 						</li>
 						<li>
-							<a href="contacts.html">Contacts</a>
+							<a href="contacts-ru.html">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -62,15 +62,15 @@
 	</nav>
 
 	<section id="contacts">
-		<h1 class="header">Contact<br>Information</h1>
+		<h1 class="header">Контактная<br>информация</h1>
 		<div class="contacts-windows">
 			<div class="contact-form-wrap">
 				<form id="contact-form" class="contact-form" action="/feedback.php" method="POST">
-					<input class="input" name="company" type="text" placeholder="Company">
-					<input class="input" name="name" type="text" placeholder="Your name">
-					<input class="input" name="phone" type="text" placeholder="Phone number">
-					<textarea class="textarea" name="message" rows="5" placeholder="Your Question"></textarea>
-					<button class="submit-btn" type="submit">Submit</button>
+					<input class="input" name="company" type="text" placeholder="Название компании">
+					<input class="input" name="name" type="text" placeholder="Ваше имя">
+					<input class="input" name="phone" type="text" placeholder="Номер телефона">
+					<textarea class="textarea" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
+					<button class="submit-btn" type="submit">Отправить</button>
 				</form>
 				<script>
 					(() => {
@@ -82,7 +82,7 @@
 								body: new FormData(form)
 							});
 							if (res.ok) {
-								alert('Message has been sent.');
+								alert('Ваше сообщение отправлено.');
 								window.location.reload();
 							}
 						});
@@ -93,7 +93,7 @@
 				<div class="contact-wrap-black"></div>
 				<div class="contact-wrap-white">
 					<div class="contacts-text">
-						<div class="contacts-addres">Kolektorna, 3a<br>02660, Kyiv, Ukraine</div>
+						<div class="contacts-addres">Украина, г. Киев, 02660<br>ул. Коллекторная 3а</div>
 						<div class="contacts-phone"><a class="link-black" href="tel:+380633009291">+380 63 300 9291</a>
 						</div>
 						<div class="contacts-email"><a class="link-black"
