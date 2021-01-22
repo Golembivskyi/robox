@@ -9,47 +9,47 @@
 
 <url>
   <loc>https://robox.technology/</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
+  <lastmod>2021-01-20T09:31:39+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://robox.technology/index.html</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
+  <lastmod>2021-01-20T09:31:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robox.technology/pages/about-us.html</loc>
+  <lastmod>2021-01-20T09:31:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://robox.technology/pages/services.html</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://robox.technology/pages/team.html</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
+  <lastmod>2021-01-20T09:31:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://robox.technology/pages/contacts.html</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
+  <lastmod>2021-01-20T09:31:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://robox.technology/index-ru.html</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
+  <lastmod>2021-01-20T09:31:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://robox.technology/pages/services-ru.html</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
+  <loc>https://robox.technology/pages/about-us-ru.html</loc>
+  <lastmod>2021-01-20T09:31:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://robox.technology/pages/team-ru.html</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
+  <loc>https://robox.technology/pages/services-ru.html</loc>
+  <lastmod>2021-01-20T09:31:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://robox.technology/pages/contacts-ru.html</loc>
-  <lastmod>2021-01-17T11:25:27+00:00</lastmod>
+  <lastmod>2021-01-20T09:31:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

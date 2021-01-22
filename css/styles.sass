@@ -476,7 +476,7 @@
 		margin-left: 128px
 		padding-bottom: 60px
 		.a-service-header
-			font-family: "Exo 2 Medium"
+			font-family: "Exo 2 SemiBold"
 			font-size: 36px
 			line-height: 43px
 			color: $black
@@ -495,7 +495,6 @@
 		.a-service-body ul li
 			color: $black
 			margin-left: -20px
-			font-family: "Exo 2 Medium"
 			font-size: 14px
 			line-height: 17px
 	.cell1-right
@@ -505,7 +504,7 @@
 			margin-right: 20px
 			margin-left: 20px
 		.a-service-header
-			font-family: "Exo 2 Medium"
+			font-family: "Exo 2 SemiBold"
 			font-size: 36px
 			line-height: 43px
 			color: $black
@@ -524,7 +523,6 @@
 		.a-service-body ul li
 			color: $black
 			margin-left: -20px
-			font-family: "Exo 2 Medium"
 			font-size: 14px
 			line-height: 17px
 	.cell3-right
@@ -575,7 +573,7 @@
 	padding: 150px 0
 	box-sizing: border-box
 .section-header
-	font-family: "Exo 2 Medium"
+	font-family: "Exo 2 SemiBold"
 	font-size: 64px
 	line-height: 77px
 	color: $dark
@@ -591,7 +589,7 @@
 		width: 430px
 		.advantage-card-head
 			color: $dark
-			font-family: "Exo 2 Medium"
+			font-family: "Exo 2 SemiBold"
 			font-size: 32px
 			line-height: 38px
 			max-width: 430px
@@ -620,7 +618,6 @@
 		padding-top: 70px
 		max-width: 855px
 		.about-company-slide-header
-			font-family: "Exo 2 Medium"
 			font-size: 64px
 			line-height: 77px
 		.about-company-slide-body
@@ -646,6 +643,37 @@
 		position: absolute
 		top: 523px
 		left: 280px
+#consortium
+	background-color: $black
+.consortium-wrap
+	max-width: 1440px
+	margin: 0 auto
+	padding: 50px 0 150px
+.consortium-members
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	padding-top: 70px
+	.consortium-member
+		width: 650px
+		margin: 45px 30px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		.c-member-title
+			font-family: "Exo 2 SemiBold"
+			font-size: 28px
+			line-height: 34px
+			margin-top: 15px
+		.c-member-desc
+			font-size: 18px
+			line-height: 26px
+.consirtium-text
+	font-family: "Exo 2"
+	font-size: 36px
+	line-height: 43px
+	display: block
+	margin-left: 30px
 #map-main
 	overflow: hidden
 .map-wrap
@@ -657,14 +685,58 @@
 		width: 122%
 		height: auto
 #map-main
-	// accent colour by dafalt
-	#UA, #PL, #US, #UK, #RO, #PL, #DE, #DK, #AU, #CN, #IL
+	// accent colour by defalt
+	#FR, #CA, #EE, #UA, #US, #DE, #DK
 		fill: $map-accent
 		transition: .3s ease-in
 	// changes on hoover
-	#UA:hover, #PL:hover, #US:hover, #UK:hover, #RO:hover, #PL:hover, #DE:hover, #DK:hover, #AU:hover, #CN:hover, #IL:hover
+	#FR:hover, #CA:hover, #EE:hover, #UA:hover, #US:hover, #DE:hover, #DK:hover
 		fill: $accent
 
+#map-wrap
+	position: relative
+
+#countries-info
+	position: absolute
+	right: 0
+	top: 0
+	pointer-events: none
+
+#countries-info > div
+	display: none
+	position: absolute
+	pointer-events: all
+	width: 170px
+	background-color: $white
+	padding: 5px 10px 0
+	box-sizing: border-box
+
+#countries-info
+	div
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 15px
+		border-radius: 3px
+	div:hover
+		display: block !important
+.country-title
+	color: #848E9F
+	font-family: "Exo 2 SemiBold"
+	font-size: 13px
+.country-title-ul
+	list-style-type: none
+	margin-top: 5px
+	margin-left: -30px
+	li
+		font-size: 13px
+		line-height: 18px
+		color: $black
+.red-link:link
+	color: $black
+	transition: .3s
+.red-link:visited
+	color: $black
+.red-link:hover
+	color: $accent
+ 
 @media screen and ( max-width:  1440px )
 	.header
 		padding-left: 20px
@@ -727,6 +799,17 @@
 			.about-company-slide-body
 				p
 					text-align: center
+	.consortium-members
+		justify-content: space-around
+		.consortium-member
+			width: 600px
+			align-items: center
+			.c-member-title
+				text-align: center
+			.c-member-desc
+				text-align: center
+	.consirtium-text
+		text-align: center
 
 @media screen and ( max-width:  768px )
 	.menu-line
@@ -832,7 +915,25 @@
 				line-height: 22px
 	#advantages
 		padding: 100px 0
-
+	.consortium-members
+		justify-content: space-around
+		padding-top: 70px
+		.consortium-member
+			display: flex
+			flex-direction: column
+			align-items: center
+			.c-member-title
+				font-size: 28px
+				line-height: 30px
+				margin-top: 15px
+			.c-member-desc
+				font-size: 16px
+				line-height: 20px
+				text-align: center
+	.consirtium-text
+		font-size: 28px
+		line-height: 30px
+		margin-left: 0
 	.about-company-home
 		min-height: 0
 	.about-company-slide
@@ -898,27 +999,52 @@
 					font-size: 18px
 
 @keyframes mouse-wheel
-	0% {top: 15px; opacity: 0}
-	20% {opacity: 1}
-	80% {opacity: 1}
-	100% {top: 29px; opacity: 0}
+	0%
+		top: 15px
+		opacity: 0
+	20%
+		opacity: 1
+	80%
+		opacity: 1
+	100%
+		top: 29px
+		opacity: 0
 @keyframes mouse-arrow-1
-	0% {opacity: 1}
-	33% {opacity: 1}
-	66% {opacity: 0}
-	100% {opacity: 0}
+	0%
+		opacity: 1
+	33%
+		opacity: 1
+	66%
+		opacity: 0
+	100%
+		opacity: 0
 @keyframes mouse-arrow-2
-	0% {opacity: 1}
-	25% {opacity: 1}
-	66% {opacity: 0}
-	100% {opacity: 0}
+	0%
+		opacity: 1
+	25%
+		opacity: 1
+	66%
+		opacity: 0
+	100%
+		opacity: 0
 @keyframes mouse-arrow-3
-	0% {opacity: 1}
-	33% {opacity: 1}
-	66% {opacity: 0}
-	100% {opacity: 0}
+	0%
+		opacity: 1
+	33%
+		opacity: 1
+	66%
+		opacity: 0
+	100%
+		opacity: 0
 @keyframes mouse-wheel-mobile
-	0% {top: 10px; opacity: 0}
-	20% {opacity: 1}
-	80% {opacity: 1}
-	100% {top: 20px; opacity: 0}
+	0%
+		top: 10px
+		opacity: 0
+	20%
+		opacity: 1
+	80%
+		opacity: 1
+	100%
+		top: 20px
+		opacity: 0
+		

@@ -40,3 +40,35 @@ burger.addEventListener('click', function(e){
 		}
 	});
 })();
+
+// Map popups on Main page
+(() => {
+	let svg = document.getElementById('world-map-image');
+	let infoCont = document.getElementById('countries-info');
+	let activeInfo = null;
+	svg.addEventListener('mouseover', e => {
+		if (e.target !== null) {
+			if (activeInfo !== null) {
+				activeInfo.style.display = 'none';
+			}
+			let code = e.target.getAttribute('id');
+			let info = document.getElementById('info-' + code);
+			if (info !== null) {
+				let contRect = infoCont.getBoundingClientRect();
+				let infoRect = e.target.getBoundingClientRect();
+				info.style.display = 'block';
+				info.style.left = infoRect.left - contRect.left + infoRect.width/2 + 'px'
+				info.style.top = infoRect.top - contRect.top + infoRect.height/2 + 'px'
+				activeInfo = info
+			}
+		}
+	});
+
+	svg.addEventListener('mouseout', e => {
+		if (activeInfo !== null) {
+			activeInfo.style.display = 'none';
+			activeInfo = null;
+		}
+	});
+
+})();

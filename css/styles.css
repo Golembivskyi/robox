@@ -9,11 +9,6 @@
 }
 
 @font-face {
-  font-family: "Exo 2 Medium";
-  src: url(../fonts/Exo2-Medium.ttf);
-}
-
-@font-face {
   font-family: "Exo 2 SemiBold";
   src: url(../fonts/Exo2-SemiBold.ttf);
 }
@@ -702,7 +697,7 @@
 }
 
 .services-row .cell3-left .a-service-header {
-  font-family: "Exo 2 Medium";
+  font-family: "Exo 2 SemiBold";
   font-size: 36px;
   line-height: 43px;
   color: #000000;
@@ -727,7 +722,6 @@
 .services-row .cell3-left .a-service-body ul li {
   color: #000000;
   margin-left: -20px;
-  font-family: "Exo 2 Medium";
   font-size: 14px;
   line-height: 17px;
 }
@@ -743,7 +737,7 @@
 }
 
 .services-row .cell1-right .a-service-header {
-  font-family: "Exo 2 Medium";
+  font-family: "Exo 2 SemiBold";
   font-size: 36px;
   line-height: 43px;
   color: #000000;
@@ -768,7 +762,6 @@
 .services-row .cell1-right .a-service-body ul li {
   color: #000000;
   margin-left: -20px;
-  font-family: "Exo 2 Medium";
   font-size: 14px;
   line-height: 17px;
 }
@@ -837,7 +830,7 @@
 }
 
 .section-header {
-  font-family: "Exo 2 Medium";
+  font-family: "Exo 2 SemiBold";
   font-size: 64px;
   line-height: 77px;
   color: #121212;
@@ -859,7 +852,7 @@
 
 .advantages-row .advantage-card .advantage-card-head {
   color: #121212;
-  font-family: "Exo 2 Medium";
+  font-family: "Exo 2 SemiBold";
   font-size: 32px;
   line-height: 38px;
   max-width: 430px;
@@ -900,7 +893,6 @@
 }
 
 .about-company-slide .about-company-slide-content .about-company-slide-header {
-  font-family: "Exo 2 Medium";
   font-size: 64px;
   line-height: 77px;
 }
@@ -937,6 +929,51 @@
   left: 280px;
 }
 
+#consortium {
+  background-color: #000000;
+}
+
+.consortium-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 0 150px;
+}
+
+.consortium-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.consortium-members .consortium-member {
+  width: 650px;
+  margin: 45px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.consortium-members .consortium-member .c-member-title {
+  font-family: "Exo 2 SemiBold";
+  font-size: 28px;
+  line-height: 34px;
+  margin-top: 15px;
+}
+
+.consortium-members .consortium-member .c-member-desc {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.consirtium-text {
+  font-family: "Exo 2";
+  font-size: 36px;
+  line-height: 43px;
+  display: block;
+  margin-left: 30px;
+}
+
 #map-main {
   overflow: hidden;
 }
@@ -953,13 +990,74 @@
   height: auto;
 }
 
-#map-main #UA, #map-main #PL, #map-main #US, #map-main #UK, #map-main #RO, #map-main #PL, #map-main #DE, #map-main #DK, #map-main #AU, #map-main #CN, #map-main #IL {
+#map-main #FR, #map-main #CA, #map-main #EE, #map-main #UA, #map-main #US, #map-main #DE, #map-main #DK {
   fill: #848E9F;
   transition: .3s ease-in;
 }
 
-#map-main #UA:hover, #map-main #PL:hover, #map-main #US:hover, #map-main #UK:hover, #map-main #RO:hover, #map-main #PL:hover, #map-main #DE:hover, #map-main #DK:hover, #map-main #AU:hover, #map-main #CN:hover, #map-main #IL:hover {
+#map-main #FR:hover, #map-main #CA:hover, #map-main #EE:hover, #map-main #UA:hover, #map-main #US:hover, #map-main #DE:hover, #map-main #DK:hover {
   fill: #dd0000;
+}
+
+#map-wrap {
+  position: relative;
+}
+
+#countries-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+#countries-info > div {
+  display: none;
+  position: absolute;
+  pointer-events: all;
+  width: 170px;
+  background-color: #ffffff;
+  padding: 5px 10px 0;
+  box-sizing: border-box;
+}
+
+#countries-info div {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 15px;
+  border-radius: 3px;
+}
+
+#countries-info div:hover {
+  display: block !important;
+}
+
+.country-title {
+  color: #848E9F;
+  font-family: "Exo 2 SemiBold";
+  font-size: 13px;
+}
+
+.country-title-ul {
+  list-style-type: none;
+  margin-top: 5px;
+  margin-left: -30px;
+}
+
+.country-title-ul li {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.red-link:link {
+  color: #000000;
+  transition: .3s;
+}
+
+.red-link:visited {
+  color: #000000;
+}
+
+.red-link:hover {
+  color: #dd0000;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1040,6 +1138,22 @@
     text-align: center;
   }
   .about-company-slide .about-company-slide-content .about-company-slide-body p {
+    text-align: center;
+  }
+  .consortium-members {
+    justify-content: space-around;
+  }
+  .consortium-members .consortium-member {
+    width: 600px;
+    align-items: center;
+  }
+  .consortium-members .consortium-member .c-member-title {
+    text-align: center;
+  }
+  .consortium-members .consortium-member .c-member-desc {
+    text-align: center;
+  }
+  .consirtium-text {
     text-align: center;
   }
 }
@@ -1167,6 +1281,30 @@
   }
   #advantages {
     padding: 100px 0;
+  }
+  .consortium-members {
+    justify-content: space-around;
+    padding-top: 70px;
+  }
+  .consortium-members .consortium-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .consortium-members .consortium-member .c-member-title {
+    font-size: 28px;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+  .consortium-members .consortium-member .c-member-desc {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .consirtium-text {
+    font-size: 28px;
+    line-height: 30px;
+    margin-left: 0;
   }
   .about-company-home {
     min-height: 0;
