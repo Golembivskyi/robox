@@ -108,6 +108,7 @@
 .red-link:link {
   text-decoration: none;
   transition: .3s;
+  color: #ffffff;
 }
 
 .red-link:hover {
@@ -990,7 +991,7 @@
   height: auto;
 }
 
-#map-main #FR, #map-main #CA, #map-main #EE, #map-main #UA, #map-main #US, #map-main #DE, #map-main #DK {
+#map-main #FR, #map-main #CA, #map-main #EE, #map-main #UA, #map-main #US, #map-main #DE, #map-main #DK, #map-main #RS {
   fill: #848E9F;
   transition: .3s ease-in;
 }
@@ -1047,16 +1048,17 @@
   color: #000000;
 }
 
-.red-link:link {
-  color: #000000;
+.map-link:link {
+  color: #121212;
   transition: .3s;
+  text-decoration: none;
 }
 
-.red-link:visited {
-  color: #000000;
+.map-link:visited {
+  color: #121212;
 }
 
-.red-link:hover {
+.map-link:hover {
   color: #dd0000;
 }
 

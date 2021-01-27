@@ -57,6 +57,7 @@
 .red-link:link
 	text-decoration: none
 	transition: .3s
+	color: $white
 .red-link:hover
 	color: $accent
 .lang-switcher
@@ -686,7 +687,7 @@
 		height: auto
 #map-main
 	// accent colour by defalt
-	#FR, #CA, #EE, #UA, #US, #DE, #DK
+	#FR, #CA, #EE, #UA, #US, #DE, #DK, #RS
 		fill: $map-accent
 		transition: .3s ease-in
 	// changes on hoover
@@ -729,12 +730,13 @@
 		font-size: 13px
 		line-height: 18px
 		color: $black
-.red-link:link
-	color: $black
+.map-link:link
+	color: $dark
 	transition: .3s
-.red-link:visited
-	color: $black
-.red-link:hover
+	text-decoration: none
+.map-link:visited
+	color: $dark
+.map-link:hover
 	color: $accent
  
 @media screen and ( max-width:  1440px )
