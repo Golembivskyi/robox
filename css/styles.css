@@ -991,12 +991,12 @@
   height: auto;
 }
 
-#map-main #FR, #map-main #CA, #map-main #EE, #map-main #UA, #map-main #US, #map-main #DE, #map-main #DK, #map-main #RS {
+#map-main #FR, #map-main #CA, #map-main #EE, #map-main #UA, #map-main #US, #map-main #DE, #map-main #DK, #map-main #RS, #map-main #RO, #map-main #AU {
   fill: #848E9F;
   transition: .3s ease-in;
 }
 
-#map-main #FR:hover, #map-main #CA:hover, #map-main #EE:hover, #map-main #UA:hover, #map-main #US:hover, #map-main #DE:hover, #map-main #DK:hover {
+#map-main #FR:hover, #map-main #CA:hover, #map-main #EE:hover, #map-main #UA:hover, #map-main #US:hover, #map-main #DE:hover, #map-main #DK:hover, #map-main #RS:hover, #map-main #RO:hover, #map-main #AU:hover {
   fill: #dd0000;
 }
 
@@ -1015,9 +1015,9 @@
   display: none;
   position: absolute;
   pointer-events: all;
-  width: 170px;
+  width: 180px;
   background-color: #ffffff;
-  padding: 5px 10px 0;
+  padding: 5px 5px 0 10px;
   box-sizing: border-box;
 }
 
