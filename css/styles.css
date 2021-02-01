@@ -991,12 +991,12 @@
   height: auto;
 }
 
-#map-main #FR, #map-main #CA, #map-main #EE, #map-main #UA, #map-main #US, #map-main #DE, #map-main #DK, #map-main #RS, #map-main #RO, #map-main #AU {
+#map-main #FR, #map-main #CA, #map-main #EE, #map-main #UA, #map-main #US, #map-main #DE, #map-main #DK, #map-main #RS, #map-main #RO, #map-main #AU, #map-main #UK, #map-main #AE {
   fill: #848E9F;
   transition: .3s ease-in;
 }
 
-#map-main #FR:hover, #map-main #CA:hover, #map-main #EE:hover, #map-main #UA:hover, #map-main #US:hover, #map-main #DE:hover, #map-main #DK:hover, #map-main #RS:hover, #map-main #RO:hover, #map-main #AU:hover {
+#map-main #FR:hover, #map-main #CA:hover, #map-main #EE:hover, #map-main #UA:hover, #map-main #US:hover, #map-main #DE:hover, #map-main #DK:hover, #map-main #RS:hover, #map-main #RO:hover, #map-main #AU:hover, #map-main #UK:hover, #map-main #AE:hover {
   fill: #dd0000;
 }
 
